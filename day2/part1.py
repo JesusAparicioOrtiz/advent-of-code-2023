@@ -32,12 +32,6 @@ def is_possible(line):
             if int(subset_parts[0]) > CUBES[subset_parts[1]]:
                 return False
     return True
-
-def is_subset_possible(subset):
-    subset_parts = subset.split(' ')
-    if int(subset_parts[0]) > CUBES[subset_parts[1]]:
-        return False
-    return True
         
 def read_file(file_path):
     with open(file_path, 'r') as file:
